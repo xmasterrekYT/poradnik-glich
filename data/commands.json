@@ -1,0 +1,302 @@
+﻿[
+  null,
+  {
+    "name": "eska",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "VEljf",
+    "actions": [
+      {
+        "url": "http://waw01-02.ic.smcdn.pl:8000/t042-1.mp3?timestamp=1579982112&hash=8b4a02042bedc1f783888112bb9fe7e7b81d98902d456aeb2c460788fef4d701&rip=88.156.132.150&chstr=f5452dad9b52c999bc51ac3a7bdd87d6a3aa85590188563273b0f8517a44af66",
+        "seek": "0",
+        "volume": "100",
+        "passes": "1",
+        "bitrate": "",
+        "type": "1",
+        "name": "Play URL"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "Oq, gramy hity na czasie",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ],
+    "_timeRestriction": 1
+  },
+  {
+    "name": "rmf",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "GYRoY",
+    "actions": [
+      {
+        "url": "http://217.74.72.11:8000/rmf_fm",
+        "seek": "0",
+        "volume": "100",
+        "passes": "1",
+        "bitrate": "",
+        "type": "1",
+        "name": "Play URL"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "Oq, gramy `łeremef najlepsza muzyka`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ],
+    "_timeRestriction": 1
+  },
+  {
+    "name": "wejdz",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "kaBPr",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "name": "Join Voice Channel"
+      },
+      {
+        "title": "",
+        "author": "",
+        "color": "#00aeff",
+        "timestamp": "false",
+        "url": "",
+        "authorIcon": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "storage": "1",
+        "varName": "embed_wejdz",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed_wejdz",
+        "message": "✅Bot pomyślnie wszedł na kanał na którym się znajdujesz.✅\nWpisz teraz: `..radio [numerek]` lub inne radia pod `..pomoc`",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "embed_wejdz",
+        "message": "Rawka by Vanish#6292",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed_wejdz",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "name": "Send Embed Message"
+      }
+    ],
+    "comType": "0",
+    "_timeRestriction": 5
+  },
+  {
+    "name": "radio",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "YLwVs",
+    "actions": [
+      {
+        "info": "0",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "stacja",
+        "name": "Store Command Params"
+      },
+      {
+        "storage": "1",
+        "varName": "stacja",
+        "comparison": "0",
+        "value": "0",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "1",
+        "name": "Check Variable MOD"
+      },
+      {
+        "storage": "1",
+        "varName": "stacja",
+        "comparison": "1",
+        "value": "21",
+        "iftrue": "3",
+        "iftrueVal": "5",
+        "iffalse": "0",
+        "iffalseVal": "1",
+        "name": "Check Variable MOD"
+      },
+      {
+        "title": "Dostępne stacje radiowe:",
+        "author": "",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "timestamp": "true",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "a",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "a",
+        "message": "1. Po Polsku\n2. Impreza **POLECAMY!**\n3. 80s hits\n4. We dwoje\n5. House\n6. Alt Freszzz\n7. Trance\n8. Klub 90'\n9. Alt Club\n10. #popularne **POLECAMY!**",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "a",
+        "message": "Aby zagrać dane radio wpisz: ..radio <numerek>\n[by Vanish#6282]",
+        "footerIcon": "https://cdn.discordapp.com/avatars/324992951120035842/128196d962c6a1e2bdb88ddcda9846b3.png",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "a",
+        "channel": "0",
+        "varName2": "",
+        "name": "Send Embed Message"
+      },
+      { "name": "End Action Sequence" },
+      {
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check is Bot in Voice Channel"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": ":x: Bota nie ma na kanale głosowym! Użyj ``..wejdz``",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      { "name": "End Action Sequence" },
+      {
+        "url": "http://stream.open.fm/${tempVars(\"stacja\")}",
+        "seek": "0",
+        "volume": "100",
+        "passes": "1",
+        "bitrate": "",
+        "type": "1",
+        "name": "Play URL"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "Gram stację z numerkiem `${tempVars(\"stacja\")}`!\n",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "0",
+    "_timeRestriction": 1
+  },
+  {
+    "name": "maxxx",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "KfwHt",
+    "actions": [
+      {
+        "url": "http://217.74.72.11:8000/rmf_maxxx",
+        "seek": "0",
+        "volume": "100",
+        "passes": "1",
+        "bitrate": "",
+        "type": "1",
+        "name": "Play URL"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "Oq, gramy hity na maxxxa",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ],
+    "_timeRestriction": 1
+  },
+  {
+    "name": "pomoc",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "nXpqy",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "eska\nrmf\nmaxxx\nradio [stacja] (1-10)\nwejdz",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ]
+  },
+  {
+    "name": "glosnosc",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "tBKyh",
+    "actions": [
+      {
+        "info": "0",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "glosc",
+        "name": "Store Command Params"
+      },
+      {
+        "volume": "${tempVars(\"glosc\")}",
+        "name": "Set Audio Volume"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "Ustawiłem głośnosc na ``${tempVars(\"glosc\")}``",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ]
+  }
+]
